@@ -35,7 +35,7 @@ function Todos() {
 
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto max-h-72 sm:max-h-96 min-h-0  overflow-auto">
       <p className="text-xl font-bold mb-2 text-white">Todo List</p>
       {loader ? (
         <p>Loading ...</p>
@@ -45,20 +45,20 @@ function Todos() {
           {todos && todos.map(item => (
             <li key={item.$id} className="flex items-center justify-between mb-2 rounded-sm hover:bg-white/80 hover:text-black transition-all text-white bg-black/40 py-2 px-5">
                 <p className=" text-wrap max-w-fit leading-relaxed">{item.todo}</p>
-                <div className='w-[70px] '>
+                {/* <div className='w-[70px] '> */}
                 <button
                   className="text-red-500 ml-2 py-1"
                   onClick={() => deleteTodo(item.$id)}
                 >
                   ❌
                 </button>
-                <button
+                {/* <button
                   className="text-red-500 ml-2 py-1"
                   onClick=''
                 >
                   ✏️
-                </button>
-              </div>
+                </button> */}
+              {/* </div> */}
                 {/*  */}
                 
             </li>

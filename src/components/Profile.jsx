@@ -39,7 +39,7 @@ function Profile() {
         <div className=" min-h-screen w-full items-center justify-center text-center bg-[#020818] h-screen">
           <nav className='py-1 flex text-center items-center justify-between px-10 bg-zinc-600/20 bg-blur-3xl'>
 
-            <h1 className=' text-white/50 font-bold text-2xl'>Hi! <i className='text-cyan-500/90'>{userDetails.name}</i></h1>
+            <h1 className=' text-white/50 font-bold sm:text-2xl'>Hi! <i className='text-cyan-500/90'>{userDetails.name}</i></h1>
 
             <div>
               <button
@@ -52,7 +52,7 @@ function Profile() {
           </nav>
 
           {/* TODO FORM */}
-          <div className="items-center justify-center lg:max-w-xl md:max-w-md sm:max-w-sm mx-auto max-w-sm min-w-[390px] min-mx-3 mt-8 p-4 bg-white rounded-md" style={{ background: 'linear-gradient(-20deg, #2b5876 0%, #4e4376 100%)' }}>
+          <div className="items-center justify-center lg:max-w-xl md:max-w-md sm:max-w-sm mx-auto max-w-sm  min-mx-3 mt-8 p-4 bg-white rounded-md" style={{ background: 'linear-gradient(-20deg, #2b5876 0%, #4e4376 100%)' }}>
             <TodoForm />
             <Todos />
           </div>
